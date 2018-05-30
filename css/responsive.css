@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  writing-mode: horizontal-tb;
+}
+
+
+/* This is to keep the Udacity logo in place when screen shrinks, and to resize the header photo. */
+@media screen and (max-width:1390px){
+  .header-photo{
+    width: 100%;
+  }
+}
+
+/* Resizes the featured photos to cover the same width as header photo. Padding numbers are specific to keep the centered look as the photo shrinks*/
+@media screen and (max-width:940px){
+.feature-photo{
+  width:100%;
+  }
+
+  .caption-1, .caption-3{
+    padding-left:41%;
+  }
+
+  .caption-2{
+    padding-left:36%;
+  }
+}
